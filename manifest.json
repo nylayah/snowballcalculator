@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "MOHELA Snowball",
+    "version": "1.0",
+    "description": "Calculates a snowball payment plan for MOHELA loans",
+    "content_scripts": [
+        {
+            "matches": ["https://www.mohela.com/DL/secure/borrower/LoanDetails.aspx"],
+            "js": ["content.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
